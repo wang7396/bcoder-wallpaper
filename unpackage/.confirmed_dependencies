@@ -1,0 +1,18 @@
+{
+  "index.html": {
+    "resources": [
+      "materialize/fonts/2fcrYFNaTjcS6g4U3t-Y5RV6cRhDpPC5P4GCEJpqGoc.woff",
+      "materialize/css/materialize.min.css",
+      "materialize/fonts/roboto/Roboto-Regular.woff2",
+      "public/style.css",
+      "app.js",
+      "jquery.js",
+      "materialize/js/materialize.js",
+      "materialize/fonts/roboto/Roboto-Bold.woff2",
+      "materialize/fonts/roboto/Roboto-Medium.woff2",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  }
+}

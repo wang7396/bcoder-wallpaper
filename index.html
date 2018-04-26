@@ -1,0 +1,203 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+      <!--Import materialize.css-->
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="public/style.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> 
+      <meta name="apple-touch-fullscreen" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <meta name="theme-color" content="#f46336">
+      <meta name="msapplication-TileColor" content="#4e4947"/>
+      
+          <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+
+      <style>
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(materialize/fonts/2fcrYFNaTjcS6g4U3t-Y5RV6cRhDpPC5P4GCEJpqGoc.woff) format('woff');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.side-nav{
+	padding-top:30px;
+}
+      </style>
+
+    </head>
+
+    <body>
+
+      <ul id="slide-out" class="side-nav">
+      	
+      	<div class="container">
+      		 	<h2>设置</h2>
+      	 <!--is_set_gallery  Switch -->
+					  <div class="switch">
+				  	<p style="font-size: 16px;"><b>保存至相册</b></p>
+					  	<p style="font-size: 12px; display: inline-block;">下载的壁纸拷贝至相册 </p>
+					    <label>
+					      关闭
+					      <input id="switch_gallery" type="checkbox">
+					      <span class="lever"></span>
+					      打开
+					    </label>
+					  </div>
+   <!--is_set_gallery Switch -->
+   
+   <!--清除缓存-->
+<!--  <p style="font-size: 16px;"><b>清除记录&下载缓存</b></p>
+   
+   <div style="width: 90px; height: 90px;line-height: 90px; font-size: 19px;" class=" btn-floating waves-effect waves-light btn-large red">120MB</div>
+   
+   <div class="chip">
+          立即清理
+   </div>-->
+   
+   <div class="device_model">
+   	
+   </div>
+   
+   <div class="app_version">
+   	
+   </div>
+   
+   <div class="app_update">
+   	<a target="_blank" class="waves-effect waves-light btn update">最新版本</a>
+   </div>
+   
+      	</div>
+     
+  
+
+
+
+<!--     <li><div class="user-view">
+  <div class="background">
+    <img src="img/bg.jpg">
+  </div>
+  <a href="#!user"><img class="circle" src="img/logo.png"></a>
+  <a href="#!name"><span class="white-text name">John Doe</span></a>
+  <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+</div></li> -->
+
+<!--     <li class="search">
+      <div class="search-wrapper card">
+        <input id="search"><i class="material-icons">search</i>
+        <div class="search-results"></div>
+      </div>
+    </li> -->
+
+   
+
+<!--    <li><div class="divider"></div></li>
+ <li><a class="subheader"></a></li>
+<li><a href="#!"><i class="material-icons">cloud</i>我的收藏</a></li>
+<li><a href="#!"><i class="material-icons">file_download</i>已下载</a></li> -->
+ 
+  
+  </ul>
+
+  <!-- 菜单按钮 -->
+  <a href="#" data-activates="slide-out" class="button-collapse btn btn-floating pulse menu-btn"><i class="material-icons">menu</i></a>
+
+
+
+<!--顶部标签-->
+<header class="header">
+        <ul class="row tabs z-depth-3 tags">
+
+        </ul>
+</header>
+
+<!-- 加载进度动画 -->
+<div class="preloader-wrapper active">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+     
+
+
+<!-- 壁纸详情 -->
+  <div class="pop-div">
+	 <div id="modal" class="modal modal-fixed-footer">
+	    <div class="modal-content">
+	    <div class="row topbar">
+	    	<div class="back col s2 modal-close"><返回</div>
+			<div class="title col s8"></div>
+	    </div>
+
+
+	      <div class="imgsource">
+	      		
+	      </div>
+	       
+	    </div>
+
+	  </div>
+
+	<div class="down-button">
+		<div class="row">
+	  		<div class="col s4"><a download="" imgid=""  class="img-download waves-effect waves-light btn">下载</a></div>
+	  		<div class="col s4"><a download="" imgid=""  class="setwallpaper waves-effect waves-light btn">设为壁纸</a></div>
+	  		<div class="col s4"><a download="" imgid=""  class="lockscreen waves-effect waves-light btn">设为锁屏</a></div>
+
+	  </div>
+	</div>
+		
+  </div>
+
+<!-- 壁纸展示 -->
+ <div class="main-view">
+   <div class="row" id="all">
+  
+
+	
+   </div>
+
+ </div> 
+
+  </div>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="jquery.min.js"></script>
+      <script type="text/javascript" src="materialize/js/materialize.js"></script>
+
+
+      <script type="text/javascript" src="app.js"></script>
+
+    </body>
+  </html>
+    
